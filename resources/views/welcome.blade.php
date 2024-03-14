@@ -21,7 +21,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2">
-                    <img src="assets/img/hero-img.svg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+                    <img src="assets/img/hero-img.svg" class="img-fluid" alt="" data-aos="zoom-out"
+                         data-aos-delay="100">
                     {{--                <x-app-logo/>--}}
                 </div>
             </div>
@@ -31,41 +32,10 @@
             <div class="container position-relative">
                 <div class="row gy-4 mt-5" style="display: flex; flex-direction: row-reverse">
 
-                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bi bi-people-fill"></i></div>
-                            <h4 class="title"><a href="" class="stretched-link">اجمالي عدد الطلاب</a></h4>
-                            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
-                                  class="purecounter title" style="color: #d8ab6a"></span>
-                        </div>
-                    </div><!--End Icon Box -->
-
-                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bi bi-person-check-fill"></i></div>
-                            <h4 class="title"><a href="" class="stretched-link">عدد الخاتمين</a></h4>
-                            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
-                                  class="purecounter title" style="color: #d8ab6a"></span>
-                        </div>
-                    </div><!--End Icon Box -->
-
-                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bi bi-geo-alt"></i></div>
-                            <h4 class="title"><a href="" class="stretched-link">عدد المشائح</a></h4>
-                            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
-                                  class="purecounter title" style="color: #d8ab6a"></span>
-                        </div>
-                    </div><!--End Icon Box -->
-
-                    <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bi bi-person-plus-fill"></i></div>
-                            <h4 class="title"><a href="" class="stretched-link">عدد المسمعين أسبوعياً</a></h4>
-                            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
-                                  class="purecounter title" style="color: #d8ab6a"></span>
-                        </div>
-                    </div><!--End Icon Box -->
+                    <x-stat-card title="عدد الطلبة" value="{{$about->number_of_students}}" icon="bi bi-person-fill"/>
+                    <x-stat-card title="عدد الخاتمين" value="{{$about->number_of_Hafez}}" icon="bi bi-person-fill"/>
+                    <x-stat-card title="عدد المشائح" value="{{$about->number_of_teachers}}" icon="bi bi-geo-alt"/>
+                    <x-stat-card title="عدد المسمعين أسبوعياً" value="232" icon="bi bi-geo-alt"/>
 
                 </div>
             </div>
@@ -105,7 +75,8 @@
                                     لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على
                                 </li>
                                 <li><i class="bi bi-check-circle-fill"></i>
-                                    لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على لوريم ايبسوم هو نموذج افتراضي
+                                    لوريم ايبسوم هو نموذج افتراضي يوضع في التصاميم لتعرض على لوريم ايبسوم هو نموذج
+                                    افتراضي
                                     يوضع في التصاميم لتعرض على العميل ليتصور طريقه وضع النصوص بالتصاميم سواء كانت تصاميم
                                 </li>
                             </ul>
@@ -116,7 +87,6 @@
 
                             <div class="position-relative mt-4">
                                 <img src="assets/img/about-2.jpg" class="img-fluid rounded-4" alt="">
-                                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
                             </div>
                         </div>
                     </div>
@@ -190,9 +160,9 @@
 
                  style=" background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{asset('assets/img/cta-bg.jpg')}}) center center; background-size: cover;"
                  data-aos="zoom-out">
-                <a href="https://www.youtube.com/watch?v=R0BrHK6w640" class="glightbox play-btn"></a>
-                <h3>Call To Action</h3>
-                <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="{{$about->youtube_video_link}}" class="glightbox play-btn"></a>
+                <h3>{{$about->youtube_video_title}}</h3>
+                <p>{{$about->youtube_video_description}}</p>
             </div>
         </section><!-- End Call To Action Section -->
 
@@ -270,7 +240,8 @@
                             <p class="post-category">Entertainment</p>
 
                             <h2 class="title">
-                                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et
+                                    soluta</a>
                             </h2>
 
                             <div class="d-flex align-items-center">
@@ -374,7 +345,7 @@
         </section><!-- End Our Services Section -->
 
         <!-- ======= Testimonials Section ======= -->
-        <section id="testimonials" class="testimonials" >
+        <section id="testimonials" class="testimonials">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-header">
@@ -428,8 +399,10 @@
                                     </div>
                                     <p>
                                         <i class="bi bi-quote quote-icon-left"></i>
-                                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid
-                                        cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet
+                                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum
+                                        quid
+                                        cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure
+                                        amet
                                         legam anim culpa.
                                         <i class="bi bi-quote quote-icon-right"></i>
                                     </p>
@@ -456,7 +429,8 @@
                                     <p>
                                         <i class="bi bi-quote quote-icon-left"></i>
                                         Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem
-                                        veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint
+                                        veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis
+                                        sint
                                         minim.
                                         <i class="bi bi-quote quote-icon-right"></i>
                                     </p>
@@ -483,7 +457,8 @@
                                     <p>
                                         <i class="bi bi-quote quote-icon-left"></i>
                                         Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim
-                                        fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem
+                                        fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore
+                                        quem
                                         dolore.
                                         <i class="bi bi-quote quote-icon-right"></i>
                                     </p>
@@ -509,8 +484,10 @@
                                     </div>
                                     <p>
                                         <i class="bi bi-quote quote-icon-left"></i>
-                                        Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster
-                                        veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam
+                                        Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor
+                                        noster
+                                        veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse
+                                        veniam
                                         culpa fore.
                                         <i class="bi bi-quote quote-icon-right"></i>
                                     </p>
@@ -628,8 +605,10 @@
                                 </h3>
                                 <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
-                                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet
-                                        non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
+                                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
+                                        laoreet
+                                        non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus
+                                        dolor
                                         purus non.
                                     </div>
                                 </div>
@@ -645,9 +624,12 @@
                                 </h3>
                                 <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
-                                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
-                                        velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend
-                                        donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
+                                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
+                                        interdum
+                                        velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque
+                                        eleifend
+                                        donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros
+                                        in
                                         cursus turpis massa tincidunt dui.
                                     </div>
                                 </div>
@@ -663,7 +645,8 @@
                                 </h3>
                                 <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
-                                        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus
+                                        Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
+                                        Faucibus
                                         pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit.
                                         Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis
                                         tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
@@ -681,9 +664,12 @@
                                 </h3>
                                 <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
-                                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
-                                        velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend
-                                        donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
+                                        Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
+                                        interdum
+                                        velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque
+                                        eleifend
+                                        donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros
+                                        in
                                         cursus turpis massa tincidunt dui.
                                     </div>
                                 </div>
@@ -699,7 +685,8 @@
                                 </h3>
                                 <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
                                     <div class="accordion-body">
-                                        Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in
+                                        Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim
+                                        suspendisse in
                                         est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl
                                         suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
                                     </div>
@@ -770,7 +757,8 @@
                         <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                    <input type="text" name="name" class="form-control" id="name"
+                                           placeholder="Your Name"
                                            required>
                                 </div>
                                 <div class="col-md-6 form-group mt-3 mt-md-0">
@@ -779,7 +767,8 @@
                                 </div>
                             </div>
                             <div class="form-group mt-3">
-                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                                <input type="text" class="form-control" name="subject" id="subject"
+                                       placeholder="Subject"
                                        required>
                             </div>
                             <div class="form-group mt-3">

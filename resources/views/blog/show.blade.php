@@ -6,7 +6,7 @@
     <main id="main">
 
         <!-- ======= Breadcrumbs ======= -->
-        <div class="breadcrumbs">
+        <div class="breadcrumbs" dir="auto">
             <div class="page-header d-flex align-items-center" style="background-image: url('');">
                 <div class="container position-relative">
                     <div class="row d-flex justify-content-center">
@@ -84,7 +84,7 @@
                                     Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut ratione aspernatur dolor. Sint harum eveniet dicta exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint consequatur quidem ea.
                                     Beatae minima sunt libero soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum quibusdam voluptatem voluptatem accusamus mollitia aut atque aut.
                                 </p>
-                                <img src="assets/img/blog/blog-inside-post.jpg" class="img-fluid" alt="">
+                                <img src="{{asset('assets/img/blog/blog-inside-post.jpg')}}" class="img-fluid" alt="">
 
                                 <h3>Ut repellat blanditiis est dolore sunt dolorum quae.</h3>
                                 <p>

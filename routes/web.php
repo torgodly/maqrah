@@ -1,9 +1,12 @@
 <?php
 
+use App\Models\About;
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    $about = About::first();
+    return view('welcome', ['about' => $about]);
 });
 
 //blog
