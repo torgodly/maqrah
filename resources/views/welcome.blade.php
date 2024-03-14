@@ -1,4 +1,42 @@
 <x-app-layout>
+    <section id="recent-posts" class="recent-posts sections-bg">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+                <h2>اخر الاخبار</h2>
+                <p>شاهد اخر اخبار وانجازات المقرأه</p>
+            </div>
+
+            <div class="row gy-4">
+
+                @foreach($posts->take(5) as $post)
+                    <div class="col-xl-4 col-md-6">
+                        <article>
+
+                            <div class="post-img">
+                                <img src="{{$post->thumbnail}}" alt="" width="100%" class="img-fluid">
+                            </div>
+
+
+                            <h2 class="title">
+                                <a href="{{route('blog.show', $post)}}">{{$post->title}}</a>
+                            </h2>
+                            <div class="post-meta">
+                                <time datetime="2021-01-01">{{$post->created_at->format('d M Y')}}</time>
+                            </div>
+
+                        </article>
+                    </div><!-- End post list item -->
+
+                @endforeach
+
+
+            </div><!-- End recent posts list -->
+
+        </div>
+    </section>
+
+
     <!-- ======= Header ======= -->
     <x-header/>
     <!-- End Header -->
@@ -158,7 +196,7 @@
         <section id="call-to-action" class="call-to-action">
             <div class="container text-center"
 
-                 style=" background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{asset('assets/img/cta-bg.jpg')}}) center center; background-size: cover;"
+                 style=" background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{$about->thumbnail}}) center center; background-size: cover;"
                  data-aos="zoom-out">
                 <a href="{{$about->youtube_video_link}}" class="glightbox play-btn"></a>
                 <h3>{{$about->youtube_video_title}}</h3>
@@ -166,102 +204,6 @@
             </div>
         </section><!-- End Call To Action Section -->
 
-        <section id="recent-posts" class="recent-posts sections-bg">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-header">
-                    <h2>Recent Blog Posts</h2>
-                    <p>Consequatur libero assumenda est voluptatem est quidem illum et officia imilique qui vel architecto accusamus fugit aut qui distinctio</p>
-                </div>
-
-                <div class="row gy-4">
-
-                    <div class="col-xl-4 col-md-6">
-                        <article>
-
-                            <div class="post-img">
-                                <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
-                            </div>
-
-                            <p class="post-category">Politics</p>
-
-                            <h2 class="title">
-                                <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
-                            </h2>
-
-                            <div class="d-flex align-items-center">
-                                <img src="assets/img/blog/blog-author.jpg" alt=""
-                                     class="img-fluid post-author-img flex-shrink-0">
-                                <div class="post-meta">
-                                    <p class="post-author">Maria Doe</p>
-                                    <p class="post-date">
-                                        <time datetime="2022-01-01">Jan 1, 2022</time>
-                                    </p>
-                                </div>
-                            </div>
-
-                        </article>
-                    </div><!-- End post list item -->
-
-                    <div class="col-xl-4 col-md-6">
-                        <article>
-
-                            <div class="post-img">
-                                <img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
-                            </div>
-
-                            <p class="post-category">Sports</p>
-
-                            <h2 class="title">
-                                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
-                            </h2>
-
-                            <div class="d-flex align-items-center">
-                                <img src="assets/img/blog/blog-author-2.jpg" alt=""
-                                     class="img-fluid post-author-img flex-shrink-0">
-                                <div class="post-meta">
-                                    <p class="post-author">Allisa Mayer</p>
-                                    <p class="post-date">
-                                        <time datetime="2022-01-01">Jun 5, 2022</time>
-                                    </p>
-                                </div>
-                            </div>
-
-                        </article>
-                    </div><!-- End post list item -->
-
-                    <div class="col-xl-4 col-md-6">
-                        <article>
-
-                            <div class="post-img">
-                                <img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
-                            </div>
-
-                            <p class="post-category">Entertainment</p>
-
-                            <h2 class="title">
-                                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et
-                                    soluta</a>
-                            </h2>
-
-                            <div class="d-flex align-items-center">
-                                <img src="assets/img/blog/blog-author-3.jpg" alt=""
-                                     class="img-fluid post-author-img flex-shrink-0">
-                                <div class="post-meta">
-                                    <p class="post-author">Mark Dower</p>
-                                    <p class="post-date">
-                                        <time datetime="2022-01-01">Jun 22, 2022</time>
-                                    </p>
-                                </div>
-                            </div>
-
-                        </article>
-                    </div><!-- End post list item -->
-
-                </div><!-- End recent posts list -->
-
-            </div>
-        </section>
         <!-- ======= Our Services Section ======= -->
         <section id="services" class="services sections-bg">
             <div class="container" data-aos="fade-up">

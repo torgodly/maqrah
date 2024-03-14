@@ -6,6 +6,7 @@ use App\Models\About;
 use Filament\Actions\Action;
 use Filament\Forms\Components\Grid;
 use Filament\Forms\Components\Section;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
@@ -68,6 +69,12 @@ class AboutPage extends Page implements HasForms
                                 ->url()
                                 ->translateLabel()
                                 ->required(),
+                            SpatieMediaLibraryFileUpload::make('thump')
+                                ->collection('thump')
+                                ->label('Thump')
+                                ->translateLabel()
+                                ->required()
+
                         ])
                     ])
             ])
