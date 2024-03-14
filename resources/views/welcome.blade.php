@@ -1,40 +1,5 @@
 <x-app-layout>
-    <section id="recent-posts" class="recent-posts sections-bg">
-        <div class="container" data-aos="fade-up">
 
-            <div class="section-header">
-                <h2>اخر الاخبار</h2>
-                <p>شاهد اخر اخبار وانجازات المقرأه</p>
-            </div>
-
-            <div class="row gy-4">
-
-                @foreach($posts->take(5) as $post)
-                    <div class="col-xl-4 col-md-6">
-                        <article>
-
-                            <div class="post-img">
-                                <img src="{{$post->thumbnail}}" alt="" width="100%" class="img-fluid">
-                            </div>
-
-
-                            <h2 class="title">
-                                <a href="{{route('blog.show', $post)}}">{{$post->title}}</a>
-                            </h2>
-                            <div class="post-meta">
-                                <time datetime="2021-01-01">{{$post->created_at->format('d M Y')}}</time>
-                            </div>
-
-                        </article>
-                    </div><!-- End post list item -->
-
-                @endforeach
-
-
-            </div><!-- End recent posts list -->
-
-        </div>
-    </section>
 
 
     <!-- ======= Header ======= -->
@@ -204,6 +169,42 @@
             </div>
         </section><!-- End Call To Action Section -->
 
+        <section id="recent-posts" class="recent-posts sections-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-header">
+                    <h2>اخر الاخبار</h2>
+                    <p>شاهد اخر اخبار وانجازات المقرأه</p>
+                </div>
+
+                <div class="row gy-4">
+
+                    @foreach($posts->take(5) as $post)
+                        <div class="col-xl-4 col-md-6">
+                            <article>
+
+                                <div class="post-img">
+                                    <img src="{{$post->thumbnail}}" alt="" width="100%" class="img-fluid">
+                                </div>
+
+
+                                <h2 class="title">
+                                    <a href="{{route('blog.show', $post)}}">{{$post->title}}</a>
+                                </h2>
+                                <div class="post-meta">
+                                    <time datetime="2021-01-01">{{$post->created_at->format('d M Y')}}</time>
+                                </div>
+
+                            </article>
+                        </div><!-- End post list item -->
+
+                    @endforeach
+
+
+                </div><!-- End recent posts list -->
+
+            </div>
+        </section>
         <!-- ======= Our Services Section ======= -->
         <section id="services" class="services sections-bg">
             <div class="container" data-aos="fade-up">
