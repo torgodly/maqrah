@@ -11,15 +11,15 @@
         <div class="container position-relative">
             <div class="row gy-5" data-aos="fade-in">
                 <div
-                    class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-end">
-                    <h2>المقرأة الليبية للقرآن الكريم وعلومه</h2>
-                    <p>مقرأة تهتم بتعليم القرآن وعلومها لكل الطلبة من كافة الأعمار والجنسيات</p>
-                    <div class="d-flex justify-content-center justify-content-lg-end">
-                        <a href="#about" class="btn-get-started">عنا</a>
+                    class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-end ">
+                    <h2 class="text-black">المقرأة الليبية للقرآن الكريم وعلومه</h2>
+                    <p class="text-black">مقرأة تهتم بتعليم القرآن وعلومها لكل الطلبة من كافة الأعمار والجنسيات</p>
+                    <div class="d-flex justify-content-center justify-content-lg-end bg-gray-300">
+                        <a href="#about" class="btn-get-started text-black">عنا</a>
                         <a href="https://www.youtube.com/watch?v=R0BrHK6w640"
                            class="glightbox btn-watch-video d-flex align-items-center">
-                            <span>من نحن</span>
-                            <i class="bi bi-play-circle"></i>
+                            <span class="text-black">من نحن</span>
+                            <i class="bi bi-play-circle text-black"></i>
                         </a>
                     </div>
                 </div>
