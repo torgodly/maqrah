@@ -1101,16 +1101,16 @@
         },
         {
             "name": "filament/spatie-laravel-media-library-plugin",
-            "version": "v3.2.48",
+            "version": "v3.2.70",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filamentphp/spatie-laravel-media-library-plugin.git",
-                "reference": "9171f0aade50237ad12cb612f8a5c7ea8bf93c01"
+                "reference": "96a715ad6b5cf97cbfa2df7ac3fe29a10b8858a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filamentphp/spatie-laravel-media-library-plugin/zipball/9171f0aade50237ad12cb612f8a5c7ea8bf93c01",
-                "reference": "9171f0aade50237ad12cb612f8a5c7ea8bf93c01",
+                "url": "https://api.github.com/repos/filamentphp/spatie-laravel-media-library-plugin/zipball/96a715ad6b5cf97cbfa2df7ac3fe29a10b8858a1",
+                "reference": "96a715ad6b5cf97cbfa2df7ac3fe29a10b8858a1",
                 "shasum": ""
             },
             "require": {
@@ -1134,7 +1134,7 @@
                 "issues": "https://github.com/filamentphp/filament/issues",
                 "source": "https://github.com/filamentphp/filament"
             },
-            "time": "2024-03-14T10:54:18+00:00"
+            "time": "2024-03-19T09:52:21+00:00"
         },
         {
             "name": "filament/support",

@@ -8,7 +8,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $about = About::first();
     $posts = Post::all();
-    return view('welcome', compact('about', 'posts'));
+    $testimonials = \App\Models\Testimonial::all();
+    return view('welcome', compact('about', 'posts', 'testimonials'));
 });
 
 //blog
