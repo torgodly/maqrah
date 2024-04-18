@@ -22,6 +22,6 @@ class Testimonial extends Model implements HasMedia
     //image
     public function getImageAttribute()
     {
-        return $this->getFirstMedia('Testimonials')->getUrl();
+        return $this->getFirstMedia('Testimonials')?->getUrl();
     }
 }
