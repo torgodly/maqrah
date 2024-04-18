@@ -207,7 +207,7 @@
         <!-- ======= Our Services Section ======= -->
 
         <!-- ======= Testimonials Section ======= -->
-        @if($testimonials)
+        @if($testimonials->isNotEmpty())
 
             <section id="testimonials" class="testimonials">
                 <div class="container" data-aos="fade-up">
