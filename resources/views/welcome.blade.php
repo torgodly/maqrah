@@ -7,7 +7,7 @@
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="hero">
+    <section id="hero" class="hero" style="">
         <div class="container position-relative">
             <div class="row gy-5" data-aos="fade-in">
                 <div
