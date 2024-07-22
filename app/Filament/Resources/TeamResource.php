@@ -84,6 +84,8 @@ class TeamResource extends Resource
                     ->searchable()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('readings')
+                    ->label('Readings')
+                    ->translateLabel()
                     ->badge()
             ])
             ->filters([
