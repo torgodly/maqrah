@@ -8,7 +8,7 @@
         </a>
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a href="#hero">الرئيسية</a></li>
+                <li><a href="/">الرئيسية</a></li>
                 <li><a href="#about">عن المؤسسة</a></li>
                 <li><a href="#team">الفريق</a></li>
                 <li><a href="blog">المدونة</a></li>

@@ -211,7 +211,7 @@
                 <div class="container" data-aos="fade-up">
 
                     <div class="section-header">
-                        <h2>{{__("Testimonials")}}</h2>
+                        <h2>شهادات</h2>
                         <p>تجارب وآراء عملائنا الكرام حول خدماتنا وجودة التعليم في المقرأة الليبية للقرآن الكريم وعلومه</p>
                     </div>
 
