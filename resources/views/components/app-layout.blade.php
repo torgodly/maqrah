@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Impact Bootstrap Template - Index</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <title>المقرأة الليبية - الصفحة الرئيسية</title>
+    <meta content="المقرأة الليبية للقرآن الكريم وعلومه هي مؤسسة تطوعية تهدف إلى تعليم القرآن الكريم وعلومه لجميع الشرائح." name="description">
+    <meta content="المقرأة الليبية, تعليم القرآن الكريم, علوم القرآن" name="keywords">
 
     <!-- Favicons -->
-    <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
-    <link href="{{ asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+    <link href="{{ asset('assets/img/hero-img.svg') }}" rel="icon">
+    <link href="{{ asset('assets/img/hero-img.svg') }}" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,13 +21,11 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-{{--    <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">--}}
     <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.rtl.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/vendor/aos/aos.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
-
 
     <!-- Template Main CSS File -->
     <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
@@ -38,8 +36,9 @@
     * Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
     * Author: BootstrapMade.com
     * License: https://bootstrapmade.com/license/
-    ============================================    ============ -->
+    ============================================ -->
 </head>
+
 
 <body>
 
