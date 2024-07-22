@@ -9,7 +9,8 @@ Route::get('/', function () {
     $posts = Post::all();
     $testimonials = \App\Models\Testimonial::all();
     $Team = \App\Models\Team::all();
-    return view('welcome', compact('about', 'posts', 'testimonials', 'Team'));
+    $fqas = \App\Models\FQA::all();
+    return view('welcome', compact('about', 'posts', 'testimonials', 'Team', 'fqas'));
 });
 
 //blog
