@@ -37,7 +37,7 @@
                             <article>
 
                                 <div class="post-img">
-                                    <img src="{{$post->thumbnail}}" alt="" class="img-fluid">
+                                    <img src="{{asset('storage/'.$post->thumbnail)}}" alt="" class="img-fluid">
                                 </div>
 
                                 <p class="post-category">{{$tag->name}}</p>
