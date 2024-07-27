@@ -41,9 +41,15 @@
 
 
 <body>
+<x-header :tags="$tags"/>
 
 {{$slot}}
+<x-footer />
+<!-- End Footer -->
 
+<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<div id="preloader"></div>
 </body>
 <!-- Vendor JS Files -->
 <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>

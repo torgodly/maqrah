@@ -17,6 +17,21 @@ class FQAResource extends Resource
 
     protected static ?string $navigationIcon = 'tabler-help-hexagon';
 
+    public static function getNavigationLabel(): string
+    {
+        return __('F Q A');
+    }
+
+    public static function getPluralLabel(): ?string
+    {
+        return __('F Q As');
+    }
+
+    public static function getModelLabel(): string
+    {
+        return __('F Q A');
+    }
+
     public static function form(Form $form): Form
     {
         return $form

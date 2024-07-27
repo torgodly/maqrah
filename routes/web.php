@@ -2,23 +2,43 @@
 
 use App\Models\About;
 use App\Models\Post;
+use App\Models\tag;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $about = About::first();
-    $posts = Post::all();
+    $posts = Post::orderByDesc('id')->get()->take(9);
     $testimonials = \App\Models\Testimonial::all();
     $Team = \App\Models\Team::all();
     $fqas = \App\Models\FQA::all();
-    return view('welcome', compact('about', 'posts', 'testimonials', 'Team', 'fqas'));
+    return view('welcome', compact('about', 'posts', 'testimonials', 'Team', 'fqas',));
 });
 
 //blog
-Route::get('/blog', function () {
-    return view('blog.index');
-});
+Route::get('/blog/{tag}', function (Tag $tag) {
+    $posts = $tag->posts;
+    return view('blog.index', compact('posts', 'tag'));
+})->name('blog.index');
 
-Route::get('/blog/{post}', function (Post $post) {
-    $posts = Post::all();
-    return view('blog.show', compact('post', 'posts'));
-})->name('blog.show');
+
+Route::get('/post/{post}', function (Post $post) {
+    $tag = $post->tag;
+    $posts = $tag->posts;
+    $tags = Tag::all();
+    return view('blog.show', compact('post', 'posts', 'tag', 'tags'));
+})->name('post.show');
+
+
+//post contact us
+Route::post('/contact', function () {
+
+    $validator =  request()->validate([
+        'name' => 'required|string|max:255',
+        'email' => 'required|email',
+        'subject' => 'required|string|max:255',
+        'message' => 'required|string',
+    ]);
+
+    \App\Models\Contact::create($validator);
+    return redirect()->back()->with('success', 'تم إرسال رسالتك. شكرًا لك!')->withFragment('contact');
+})->name('contact.submit');

@@ -23,6 +23,11 @@ class AboutPage extends Page implements HasForms
     protected static ?string $navigationGroup = 'Website';
 
     protected static string $view = 'filament.pages.about-page';
+    public static function getNavigationLabel(): string
+    {
+        return __('About Page');
+    }
+
     public $data = [];
 
     public function mount(): void

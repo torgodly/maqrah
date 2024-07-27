@@ -9,6 +9,8 @@ class AppLayout extends Component
 {
     public function render(): View
     {
-        return view('components.app-layout');
+        $tags = \App\Models\Tag::all();
+
+        return view('components.app-layout', compact('tags'));
     }
 }

@@ -20,5 +20,24 @@
     "Create a new question and answer.": "إنشاء سؤال وجواب جديد.",
     "Create FQA": "إنشاء سؤال",
     "Question": "السؤال",
-    "Answer": "الجواب"
+    "Answer": "الجواب",
+    "Tags": "التصنيفات",
+    "Tag": "تصنيف",
+    "Create a new tag.": "إنشاء تصنيف جديد.",
+    "Description": "الوصف",
+    "Youtube Link": "رابط اليوتيوب",
+    "Title": "العنوان",
+    "Images": "الصور",
+    "Thumbnail": "الصورة المصغرة",
+    "post": "منشور",
+    "posts": "منشورات",
+    "Youtube link": "رابط اليوتيوب",
+    "About Page": "صفحة عنا",
+    "F Q A": "الأسئلة الشائعة",
+    "F Q As": "الأسئلة الشائعة",
+    "Messages": "الرسائل",
+    "Message": "الرسالة",
+    "Subject": "الموضوع",
+    "Email": "البريد الإلكتروني"
+
 }

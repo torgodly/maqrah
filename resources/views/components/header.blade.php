@@ -11,7 +11,16 @@
                 <li><a href="/">الرئيسية</a></li>
                 <li><a href="#about">عن المؤسسة</a></li>
                 <li><a href="#team">الفريق</a></li>
-                <li><a href="blog">المدونة</a></li>
+                <li class="dropdown"><a href="#">
+                        <i class="bi bi-chevron-down toggle-dropdown"></i>
+                        <span>التصنيفات</span>
+                        </a>
+                    <ul>
+                        @foreach($tags as $tag)
+                            <li><a href="{{ route('blog.index', $tag) }}">{{ $tag->name }}</a></li>
+                        @endforeach
+                    </ul>
+                </li>
                 <li><a href="#faq">الأسئلة الشائعة</a></li>
                 <li><a href="#testimonials">الشهادات</a></li>
                 <li><a href="#contact">اتصل بنا</a></li>
