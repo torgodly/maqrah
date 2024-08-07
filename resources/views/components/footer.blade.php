@@ -40,11 +40,11 @@
             <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
                 <h4>تواصل معنا</h4>
                 <p>
-                    شارع آدم 108<br>
-                    نيويورك، NY 535022<br>
-                    الولايات المتحدة<br><br>
-                    <strong>الهاتف:</strong> +1 5589 55488 55<br>
-                    <strong>البريد الإلكتروني:</strong> info@example.com<br>
+                    تاجوراء، الضواحي<br>
+                   طرابلس<br>
+                    ليبيا<br><br>
+                    <strong>الهاتف:</strong> +218 91-6579403<br>
+                    <strong>البريد الإلكتروني:</strong> info@maqraah.ly<br>
                 </p>
             </div>
 
