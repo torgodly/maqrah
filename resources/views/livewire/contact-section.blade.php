@@ -30,7 +30,7 @@
                         <i class="bi bi-phone flex-shrink-0"></i>
                         <div>
                             <h4>اتصل بنا:</h4>
-                            <p>+218 91-6579403</p>
+                            <p dir="auto">+218 91-6579403</p>
                         </div>
                     </div>
 
