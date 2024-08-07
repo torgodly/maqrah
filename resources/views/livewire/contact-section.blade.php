@@ -14,7 +14,7 @@
                         <i class="bi bi-geo-alt flex-shrink-0"></i>
                         <div>
                             <h4>الموقع:</h4>
-                            <p>شارع آدم 108، نيويورك، NY 535022</p>
+                            <p>تاجوراء، الضواحي</p>
                         </div>
                     </div>
 
@@ -22,7 +22,7 @@
                         <i class="bi bi-envelope flex-shrink-0"></i>
                         <div>
                             <h4>البريد الإلكتروني:</h4>
-                            <p>info@example.com</p>
+                            <p>info@maqraah.ly</p>
                         </div>
                     </div>
 
@@ -38,7 +38,7 @@
                         <i class="bi bi-clock flex-shrink-0"></i>
                         <div>
                             <h4>ساعات العمل:</h4>
-                            <p>الاثنين - السبت: 11 صباحًا - 11 مساءً</p>
+                            <p>الخميس - الاحد: 11 صباحًا - 11 مساءً</p>
                         </div>
                     </div>
                 </div>
