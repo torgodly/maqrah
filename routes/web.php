@@ -11,7 +11,11 @@ Route::get('/', function () {
     $testimonials = \App\Models\Testimonial::all();
     $Team = \App\Models\Team::all();
     $fqas = \App\Models\FQA::all();
-    return view('welcome', compact('about', 'posts', 'testimonials', 'Team', 'fqas',));
+    $finishing = Tag::where('type', 'ختمات')->get();
+    $competitions = Tag::where('type', 'مسابقات')->get();
+    $lessons = Tag::where('type', 'دروس')->get();
+    $camps = Tag::where('type', 'مخيمات')->get();
+    return view('welcome', compact('about', 'posts', 'testimonials', 'Team', 'fqas', 'finishing', 'competitions', 'lessons', 'camps'));
 });
 
 //blog

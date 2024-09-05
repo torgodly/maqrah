@@ -8,10 +8,12 @@
                 </a>
                 <p>المقرأة الليبية للقرآن الكريم وعلومه مؤسسة تطوعية تُعنى بتعليم القرآن الكريم وعلومه لجميع الشرائح. نقدم خدمات تعليمية متميزة تساهم في نشر علوم القرآن الكريم وتعزيز القيم الدينية.</p>
                 <div class="social-links d-flex mt-4">
-                    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://x.com/maqraahly" class="twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.facebook.com/maqraah.ly" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/almaqraa_allibiya" class="instagram"><i class="bi bi-instagram"></i></a>
                     <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://t.me/almaqraa_allibiya" class="telegram"><i class="bi bi-telegram"></i></a>
+                    <a href="https://www.tiktok.com/@libyanmaqraah" class="tiktok"><i class="bi bi-tiktok"></i></a>
                 </div>
             </div>
 

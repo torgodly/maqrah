@@ -26,6 +26,18 @@ class TagResource extends Resource
                     ->columnSpanFull()
                     ->required()
                     ->maxLength(255),
+                Forms\Components\Select::make('type')
+                    ->label(__('Type'))
+                    ->columnSpanFull()
+                    ->options([
+                        'عام' => 'عام',
+                        "ختمات" => "ختمات",
+                        "مسابقات" => "مسابقات",
+                        "دروس" => "دروس",
+                        "مخيمات" => "مخيمات",
+
+                    ])
+                    ->required(),
                 Forms\Components\Textarea::make('description')
                     ->label(__('Description'))
                     ->columnSpanFull()
@@ -55,6 +67,10 @@ class TagResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('name')
                     ->label(__('Name'))
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('type')
+                    ->label(__('Type'))
+                    ->sortable()
                     ->searchable(),
                 Tables\Columns\TextColumn::make('description')
                     ->label(__('Description'))

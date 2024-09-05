@@ -9,9 +9,9 @@
         <div class="container position-relative">
             <div class="row gy-5" data-aos="fade-in">
                 <div
-                    class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-end ">
+                    class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-center ">
                     <h2 class="text-black">المقرأة الليبية للقرآن الكريم وعلومه</h2>
-                    <p class="text-black">مقرأة تهتم بتعليم القرآن وعلومها لكل الطلبة من كافة الأعمار والجنسيات</p>
+                    <p class="text-black">مؤسسة تطوعية ُتعنى بتعلـيم القرآن الكريـم وعلومـه لجميع الشرائح من كافة الأعمار والجنسيات</p>
                     <div class="d-flex justify-content-center justify-content-lg-end bg-gray-300">
                         <a href="#about" class="btn-get-started text-black">عنا</a>
                         <a href="https://www.youtube.com/watch?v=R0BrHK6w640"
@@ -43,6 +43,17 @@
         </div>
 
     </section>
+    <section id="call-to-action" class="call-to-action">
+        <div class="container text-center"
+
+             style=" background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{$about?->thumbnail}}) center center; background-size: cover;"
+             data-aos="zoom-out">
+            <a href="{{$about?->youtube_video_link}}" class="glightbox play-btn"></a>
+            <h3>{{$about?->youtube_video_title}}</h3>
+            <p>{{$about?->youtube_video_description}}</p>
+        </div>
+    </section>
+
     <!-- End Hero Section -->
 
     <main id="main">
@@ -52,7 +63,7 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-header">
-                    <h2>عنا</h2>
+                    <h2>عن المؤسسة</h2>
                     <p>المقرأة الليبية للقرآن الكريم وعلومه مؤسسة تطوعية تُعنى بتعليم القرآن الكريم وعلومه لجميع الشرائح، أُسست في أغسطس من عام 2020، وانطلقت تجريبيا في ديسمبر من العام نفسه، وكانت الانطلاقة الفعلية في يناير من عام 2021.</p>
                 </div>
 
@@ -60,23 +71,23 @@
                     <div class="col-lg-6">
                         <h3>مؤسسة تعليمية متكاملة</h3>
                         <img src="{{asset('images/1.jpeg')}}" class="img-fluid rounded-4 mb-4" alt="مقرأة ليبية">
-                        <p>تضم المقرأة قرابة ألفي طالب وطالبة من مختلف أرجاء المعمورة، كما تضم أكثر من 130 معلمًا ومعلمة. وتشتمل على كادر إداري في إدارتي التحفيظ لقسمي الإناث والذكور، وإدارة التسجيل، وإدارة البيانات، وإدارة الإعلام، وغيرها من الإدارات. تضمّ المقرأة أيضا طلبة من غير الناطقين بالعربية.</p>
-                        <p>تشرف المقرأة على مناشط مصاحبة لتعليم القرآن الكريم وعلومه، إذ تقيم المخيمات القرآنية لمحفظي ومحفظات المقرأة، كما تقيم مسابقات داخلية لطلبة المقرأة وقد أنجزت ثلاث نسخ منها. كما تشرف المقرأة على تصوير ختمات بأصوات القراء الليبيين من مختلف المدن والأعمار، فكانت البداية بالختمة الليبية، ثم ختمة قراء المستقبل، ثم ختمة الأوائل.</p>
+                        <p>تشرف المقرأة على مناشط مصاحبة لتعليم القرآن الكريم وعلومه، إذ تقيم المخيمات القرآنية لمحفظي ومحفظات المقرأة، كما تقيم مسابقات داخلية لطلبة المقرأة . كما تشرف المقرأة على تصوير ختمات بأصوات القراء الليبيين من مختلف المدن والأعمار، فكانت البداية بالختمة الليبية، ثم ختمة قراء المستقبل، ثم ختمة الأوائل. كل هذا والنشاط الأساسي (تعليم القرآن الكريم وعلومه)، يسير بسلالة ودون تأثير المناشط المصاحبة.</p>
                     </div>
                     <div class="col-lg-6">
-                        <div class="content ps-0 ps-lg-5">
-                            <p class="fst-italic">
-                                كل هذا والنشاط الأساسي (تعليم القرآن الكريم وعلومه)، يسير بسلالة ودون تأثّر المناشط المصاحبة.
-                            </p>
-                            <ul>
-                                <li><i class="bi bi-check-circle-fill"></i>تضم المقرأة قرابة ألفي طالب وطالبة من مختلف
-                                    أرجاء المعمورة.
+                        <div class="content ps-0 ps-lg-5" >
+                            {{--                            <p class="fst-italic">--}}
+                            {{--                                المقرأة الليبية للقرآن الكريم وعلومه مؤسسة تطوعية تُعنى بتعليم القرآن الكريم وعلومه لجميع الشرائح، أُسست في أغسطس من عام 2020، وانطلقت تجريبيا في ديسمبر من العام نفسه، وكانت الانطلاقة الفعلية في يناير من عام 2021.--}}
+                            {{--                            </p>--}}
+                            <ul >
+                                <li><i class="bi bi-check-circle-fill"></i> تضم المقرأة عددًا كبيرًا من الطلاب والطالبات
+                                    من مختلف أرجاء المعمورة، بالإضافة إلى مجموعة من المعلمين والمعلمات ذوي الخبرة في
+                                    تعليم القرآن الكريم.
                                 </li>
-                                <li><i class="bi bi-check-circle-fill"></i>تشرف المقرأة على مناشط مصاحبة لتعليم القرآن
-                                    الكريم وعلومه، منها المخيمات القرآنية والمسابقات الداخلية.
+                                <li><i class="bi bi-check-circle-fill"></i>تشتمل على كادر إداري في إدارتي التحفيظ لقسمي
+                                    الإناث والذكور، وإدارة التسجيل، وإدارة البيانات، وإدارة الإعلام، وغيرها من الإدارات.
                                 </li>
-                                <li><i class="bi bi-check-circle-fill"></i>تشرف المقرأة على تصوير ختمات بأصوات القراء
-                                    الليبيين من مختلف المدن والأعمار.
+                                <li><i class="bi bi-check-circle-fill"></i>تضمّ المقرأة أيضا طلبة من غير الناطقين
+                                    بالعربية.
                                 </li>
                             </ul>
                             <p>
@@ -87,6 +98,7 @@
                                 <img src="{{asset('images/2.jpeg')}}" class="img-fluid rounded-4" alt="أنشطة المقرأة">
                             </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -154,17 +166,157 @@
         <!-- End Stats Counter Section -->
 
         <!-- ======= Call To Action Section ======= -->
-        <section id="call-to-action" class="call-to-action">
-            <div class="container text-center"
+        <!-- End Call To Action Section -->
 
-                 style=" background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{$about?->thumbnail}}) center center; background-size: cover;"
-                 data-aos="zoom-out">
-                <a href="{{$about?->youtube_video_link}}" class="glightbox play-btn"></a>
-                <h3>{{$about?->youtube_video_title}}</h3>
-                <p>{{$about?->youtube_video_description}}</p>
+
+        <section id="recent-posts" class="recent-posts sections-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-header">
+                    <h2>الدروس</h2>
+                    <p>شاهد اخر اخبار وانجازات المقرأه</p>
+                </div>
+
+                <div class="row gy-4">
+
+                    @foreach($lessons as $tag)
+                        <div class="col-xl-4 col-md-6">
+                            <article>
+
+                                <div class="post-img">
+                                    <img src="{{asset('storage/'.$tag->posts->first()?->thumbnail)}}" alt="" width="100%"
+                                         class="img-fluid">
+                                </div>
+
+
+                                <h2 class="title">
+                                    <a href="{{route('blog.index', $tag)}}">{{$tag->name}}</a>
+                                </h2>
+                                <div class="post-meta">
+                                    <time datetime="2021-01-01">{{$tag->posts->first()?->created_at->format('d M Y')}}</time>
+                                </div>
+
+                            </article>
+                        </div><!-- End post list item -->
+
+                    @endforeach
+
+
+                </div><!-- End recent posts list -->
+
             </div>
-        </section><!-- End Call To Action Section -->
+        </section>
+        <section id="recent-posts" class="recent-posts sections-bg">
+            <div class="container" data-aos="fade-up">
 
+                <div class="section-header">
+                    <h2>الخاتمات</h2>
+                    <p>شاهد اخر اخبار وانجازات المقرأه</p>
+                </div>
+
+                <div class="row gy-4">
+
+                    @foreach($finishing as $tag)
+                        <div class="col-xl-4 col-md-6">
+                            <article>
+
+                                <div class="post-img">
+                                    <img src="{{asset('storage/'.$tag->posts->first()?->thumbnail)}}" alt="" width="100%"
+                                         class="img-fluid">
+                                </div>
+
+
+                                <h2 class="title">
+                                    <a href="{{route('blog.index', $tag)}}">{{$tag->name}}</a>
+                                </h2>
+                                <div class="post-meta">
+                                    <time datetime="2021-01-01">{{$tag->posts->first()?->created_at->format('d M Y')}}</time>
+                                </div>
+
+                            </article>
+                        </div><!-- End post list item -->
+
+                    @endforeach
+
+
+                </div><!-- End recent posts list -->
+
+            </div>
+        </section>
+        <section id="recent-posts" class="recent-posts sections-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-header">
+                    <h2>المسابقات</h2>
+                    <p>شاهد اخر اخبار وانجازات المقرأه</p>
+                </div>
+
+                <div class="row gy-4">
+
+                    @foreach($competitions as $tag)
+                        <div class="col-xl-4 col-md-6">
+                            <article>
+
+                                <div class="post-img">
+                                    <img src="{{asset('storage/'.$tag->posts->first()?->thumbnail)}}" alt="" width="100%"
+                                         class="img-fluid">
+                                </div>
+
+
+                                <h2 class="title">
+                                    <a href="{{route('blog.index', $tag)}}">{{$tag->name}}</a>
+                                </h2>
+                                <div class="post-meta">
+                                    <time datetime="2021-01-01">{{$tag->posts->first()?->created_at->format('d M Y')}}</time>
+                                </div>
+
+                            </article>
+                        </div><!-- End post list item -->
+
+                    @endforeach
+
+
+                </div><!-- End recent posts list -->
+
+            </div>
+        </section>
+        <section id="recent-posts" class="recent-posts sections-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-header">
+                    <h2>المخيمات</h2>
+                    <p>شاهد اخر اخبار وانجازات المقرأه</p>
+                </div>
+
+                <div class="row gy-4">
+
+                    @foreach($camps as $tag)
+                        <div class="col-xl-4 col-md-6">
+                            <article>
+
+                                <div class="post-img">
+                                    <img src="{{asset('storage/'.$tag->posts->first()?->thumbnail)}}" alt="" width="100%"
+                                         class="img-fluid">
+                                </div>
+
+
+                                <h2 class="title">
+                                    <a href="{{route('blog.index', $tag)}}">{{$tag->name}}</a>
+                                </h2>
+                                <div class="post-meta">
+                                    <time datetime="2021-01-01">{{$tag->posts->first()?->created_at->format('d M Y')}}</time>
+                                </div>
+
+                            </article>
+                        </div><!-- End post list item -->
+
+                    @endforeach
+
+
+                </div><!-- End recent posts list -->
+
+            </div>
+        </section>
         <section id="recent-posts" class="recent-posts sections-bg">
             <div class="container" data-aos="fade-up">
 
@@ -202,6 +354,7 @@
 
             </div>
         </section>
+
         <!-- ======= Our Services Section ======= -->
 
         <!-- ======= Testimonials Section ======= -->
@@ -341,7 +494,7 @@
         <!-- End Recent Blog Posts Section -->
 
         <!-- ======= Contact Section ======= -->
-    <livewire:contact-section/>
+        <livewire:contact-section/>
 
     </main><!-- End #main -->
 

@@ -57,6 +57,7 @@ class PostResource extends Resource
                     ->image()
                     ->columnSpanFull(),
                 RichEditor::make('content')
+                    ->required()
                     ->translateLabel()
                     ->columnSpanFull(),
                 Forms\Components\TextInput::make('youtube_link')
