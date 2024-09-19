@@ -15,7 +15,7 @@
             <div class="page-header d-flex align-items-center" style="background-image: url('');">
                 <div class="container position-relative">
                     <div class="row d-flex justify-content-center">
-                        <div class="col-lg-7 text-center">
+                        <div class="col-lg-8 text-center">
                             <h1>{{$tag->name}}</h1>
                             <h2>{{$post->title}}</h2>
 
