@@ -14,7 +14,7 @@ return new class extends Migration {
             $table->id();
             $table->string('thumbnail');
             $table->string('title');
-            $table->text('content');
+            $table->text('content')->nullable();
             $table->foreignId('tag_id')->constrained();
             $table->string('youtube_link')->nullable();
             $table->timestamps();
