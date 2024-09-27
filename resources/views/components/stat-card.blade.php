@@ -3,7 +3,7 @@
     <div class="icon-box">
         <div class="icon"><i class="{{$icon}}"></i></div>
         <h4 class="title"><a class="stretched-link">{{$title}}</a></h4>
-        <span data-purecounter-start="0" data-purecounter-end="{{$value}}" data-purecounter-duration="1"
+        <span data-purecounter-start="0" data-purecounter-end="{{$value}}" data-purecounter-duration="2"
               class="purecounter title" style="color: #d8ab6a"></span>
     </div>
 </div>

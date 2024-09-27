@@ -31,12 +31,13 @@
 
         <div class="icon-boxes position-relative">
             <div class="container position-relative">
-                <div class="row gy-4 mt-5" style="display: flex; flex-direction: row-reverse">
+                <div class="row gy-4 mt-5" style="display: flex; flex-direction: row-reverse; justify-content: center; place-items: center; ">
 
-                    <x-stat-card title="عدد الطلبة" value="{{$about?->number_of_students}}" icon="bi bi-person-fill"/>
-                    <x-stat-card title="عدد الخاتمين" value="{{$about?->number_of_Hafez}}" icon="bi bi-person-fill"/>
-                    <x-stat-card title="عدد المشائح" value="{{$about?->number_of_teachers}}" icon="bi bi-geo-alt"/>
-                    <x-stat-card title="عدد المسمعين أسبوعياً" value="232" icon="bi bi-geo-alt"/>
+                    <x-stat-card title="عدد الطلبة" value="871" icon="bi bi-person-fill"/>
+                    <x-stat-card title="عدد المعلمين والمعلمات" value="117" icon="bi bi-briefcase-fill"/>
+{{--                    <x-stat-card title="عدد المجموعات" value="120" icon="bi bi-people-fill"/>--}}
+                    <x-stat-card title="عدد الختمات المنجزة" value="161.95" icon="bi bi-book-fill"/>
+                    <x-stat-card title="عدد الاثمان المنجزة" value="77736.59" icon="bi bi-bookmark-check-fill"/>
 
                 </div>
             </div>
@@ -74,11 +75,11 @@
                         <p>تشرف المقرأة على مناشط مصاحبة لتعليم القرآن الكريم وعلومه، إذ تقيم المخيمات القرآنية لمحفظي ومحفظات المقرأة، كما تقيم مسابقات داخلية لطلبة المقرأة . كما تشرف المقرأة على تصوير ختمات بأصوات القراء الليبيين من مختلف المدن والأعمار، فكانت البداية بالختمة الليبية، ثم ختمة قراء المستقبل، ثم ختمة الأوائل. كل هذا والنشاط الأساسي (تعليم القرآن الكريم وعلومه)، يسير بسلالة ودون تأثير المناشط المصاحبة.</p>
                     </div>
                     <div class="col-lg-6">
-                        <div class="content ps-0 ps-lg-5" >
+                        <div class="content ps-0 ps-lg-5">
                             {{--                            <p class="fst-italic">--}}
                             {{--                                المقرأة الليبية للقرآن الكريم وعلومه مؤسسة تطوعية تُعنى بتعليم القرآن الكريم وعلومه لجميع الشرائح، أُسست في أغسطس من عام 2020، وانطلقت تجريبيا في ديسمبر من العام نفسه، وكانت الانطلاقة الفعلية في يناير من عام 2021.--}}
                             {{--                            </p>--}}
-                            <ul >
+                            <ul>
                                 <li><i class="bi bi-check-circle-fill"></i> تضم المقرأة عددًا كبيرًا من الطلاب والطالبات
                                     من مختلف أرجاء المعمورة، بالإضافة إلى مجموعة من المعلمين والمعلمات ذوي الخبرة في
                                     تعليم القرآن الكريم.
@@ -184,7 +185,8 @@
                             <article>
 
                                 <div class="post-img">
-                                    <img src="{{asset('storage/'.$tag->posts->first()?->thumbnail)}}" alt="" width="100%"
+                                    <img src="{{asset('storage/'.$tag->posts->first()?->thumbnail)}}" alt=""
+                                         width="100%"
                                          class="img-fluid">
                                 </div>
 
@@ -193,7 +195,8 @@
                                     <a href="{{route('blog.index', $tag)}}">{{$tag->name}}</a>
                                 </h2>
                                 <div class="post-meta">
-                                    <time datetime="2021-01-01">{{$tag->posts->first()?->created_at->format('d M Y')}}</time>
+                                    <time
+                                        datetime="2021-01-01">{{$tag->posts->first()?->created_at->format('d M Y')}}</time>
                                 </div>
 
                             </article>
@@ -221,7 +224,8 @@
                             <article>
 
                                 <div class="post-img">
-                                    <img src="{{asset('storage/'.$tag->posts->first()?->thumbnail)}}" alt="" width="100%"
+                                    <img src="{{asset('storage/'.$tag->posts->first()?->thumbnail)}}" alt=""
+                                         width="100%"
                                          class="img-fluid">
                                 </div>
 
@@ -230,7 +234,8 @@
                                     <a href="{{route('blog.index', $tag)}}">{{$tag->name}}</a>
                                 </h2>
                                 <div class="post-meta">
-                                    <time datetime="2021-01-01">{{$tag->posts->first()?->created_at->format('d M Y')}}</time>
+                                    <time
+                                        datetime="2021-01-01">{{$tag->posts->first()?->created_at->format('d M Y')}}</time>
                                 </div>
 
                             </article>
@@ -258,7 +263,8 @@
                             <article>
 
                                 <div class="post-img">
-                                    <img src="{{asset('storage/'.$tag->posts->first()?->thumbnail)}}" alt="" width="100%"
+                                    <img src="{{asset('storage/'.$tag->posts->first()?->thumbnail)}}" alt=""
+                                         width="100%"
                                          class="img-fluid">
                                 </div>
 
@@ -267,7 +273,8 @@
                                     <a href="{{route('blog.index', $tag)}}">{{$tag->name}}</a>
                                 </h2>
                                 <div class="post-meta">
-                                    <time datetime="2021-01-01">{{$tag->posts->first()?->created_at->format('d M Y')}}</time>
+                                    <time
+                                        datetime="2021-01-01">{{$tag->posts->first()?->created_at->format('d M Y')}}</time>
                                 </div>
 
                             </article>
@@ -295,7 +302,8 @@
                             <article>
 
                                 <div class="post-img">
-                                    <img src="{{asset('storage/'.$tag->posts->first()?->thumbnail)}}" alt="" width="100%"
+                                    <img src="{{asset('storage/'.$tag->posts->first()?->thumbnail)}}" alt=""
+                                         width="100%"
                                          class="img-fluid">
                                 </div>
 
@@ -304,7 +312,8 @@
                                     <a href="{{route('blog.index', $tag)}}">{{$tag->name}}</a>
                                 </h2>
                                 <div class="post-meta">
-                                    <time datetime="2021-01-01">{{$tag->posts->first()?->created_at->format('d M Y')}}</time>
+                                    <time
+                                        datetime="2021-01-01">{{$tag->posts->first()?->created_at->format('d M Y')}}</time>
                                 </div>
 
                             </article>
